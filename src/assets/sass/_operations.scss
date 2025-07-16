@@ -1,0 +1,34 @@
+@use "./variables";
+
+.operations-item {
+	display: grid;
+
+	background-color: variables.$yellow;
+	color: #000814;
+	margin-bottom: 1rem;
+	padding: 1rem 1.5rem;
+	border-radius: 15px;
+	cursor: pointer;
+	text-align: center;
+	user-select: none;
+
+	&:hover,
+	&:active {
+		background-color: variables.$darker-yellow;
+	}
+
+	h3 {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.8rem;
+		justify-content: center;
+	}
+}
+
+.operations-item__ope-left {
+	display: inline-block;
+	color: green;
+	background: #c1edc1;
+	width: 5rem;
+	border-radius: 5px;
+}

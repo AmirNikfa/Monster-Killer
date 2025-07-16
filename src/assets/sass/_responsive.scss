@@ -1,0 +1,23 @@
+@media (min-width: 300px) and (min-height: 774px),
+	(min-width: 378px) and (min-height: 714px) {
+	.main-footer {
+		display: revert;
+	}
+}
+
+@media (min-width: 386px) and (min-height: 789px) {
+	.main-header {
+		padding: 1.5rem;
+	}
+	body {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 398px) and (min-height: 845px) {
+	.main-header,
+	.main-footer,
+	.box {
+		padding: 1.5rem;
+	}
+}

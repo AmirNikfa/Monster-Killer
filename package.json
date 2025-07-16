@@ -1,0 +1,30 @@
+{
+  "name": "monster-killer",
+  "version": "1.0.0",
+  "description": "Monster Killer App",
+  "type": "module",
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
+  "scripts": {
+    "start": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.1",
+    "@capacitor/app": "^6.0.2",
+    "@capacitor/core": "^6.2.1",
+    "@capacitor/preferences": "^6.0.3",
+    "terser": "^5.39.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.2.1",
+    "sass": "^1.89.2",
+    "vite": "^5.4.2"
+  },
+  "author": "Amirhosein Nikfallah",
+  "license": "ISC"
+}

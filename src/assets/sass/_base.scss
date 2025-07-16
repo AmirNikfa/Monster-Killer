@@ -1,0 +1,65 @@
+@use "./variables";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: variables.$main-bg;
+	color: variables.$main-color;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.85rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100%;
+}
+
+.box {
+	background-color: variables.$box-bg;
+	margin: 1rem auto;
+	max-width: 800px;
+	padding: 1rem;
+	border-radius: 15px;
+}
+
+.main-header {
+	padding: 1rem;
+	text-align: center;
+	background-color: variables.$secondary-bg;
+}
+
+.main {
+	padding: 1rem;
+	min-height: 0;
+	overflow: auto;
+}
+
+.main-footer {
+	display: none;
+	padding: 1rem;
+	background-color: variables.$secondary-bg;
+	text-align: center;
+	color: variables.$main-color;
+}

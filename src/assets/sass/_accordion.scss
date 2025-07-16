@@ -1,0 +1,136 @@
+@use "./variables";
+
+.accordion-button {
+	position: sticky;
+	top: -1px;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: none;
+	font-size: 1.2rem;
+	padding: 1rem;
+	width: 100%;
+	background-color: variables.$yellow;
+	color: #444;
+	cursor: pointer;
+
+	time {
+		font-size: min(4vw, 1rem);
+		color: #003566;
+	}
+}
+
+.accordion-button:hover {
+	background-color: variables.$darker-yellow;
+}
+
+.accordion-button--draw {
+	transition: background-color 0.2s ease;
+
+	&:hover,
+	&:active {
+		background-color: #0085ff;
+	}
+}
+
+.accordion-button--draw,
+.draw-item {
+	color: #00427f;
+	background-color: #54adff;
+
+	.accordion-title {
+		color: inherit;
+	}
+}
+
+.accordion-button--win {
+	transition: background-color 0.2s ease;
+
+	&:hover,
+	&:active {
+		background-color: #7de07d;
+	}
+}
+
+.accordion-button--win,
+.winner-item {
+	background-color: #cde7cd;
+	color: #009200;
+
+	.accordion-title {
+		color: inherit;
+	}
+}
+
+.accordion-button--lose {
+	transition: background-color 0.2s ease;
+
+	&:hover,
+	&:active {
+		background-color: #e67474;
+	}
+}
+
+.accordion-button--lose,
+.loser-item {
+	background-color: #e8acac;
+	color: #bc0000;
+
+	.accordion-title {
+		color: inherit;
+	}
+}
+
+.damage-done-item {
+	color: #009200 !important;
+}
+
+.damage-taken-item {
+	color: #bc0000 !important;
+}
+
+.accordion-title {
+	color: variables.$dark-red;
+	padding: 1rem 1rem 0 1rem;
+}
+
+.accordion-contents-container {
+	height: 0;
+	overflow: hidden;
+	background-color: #f7f7f7;
+
+	// transition: height 0.3s linear;
+}
+
+.accordion-contents-wrapper {
+	border-bottom: 1px solid red;
+}
+
+.accordion-contents {
+	padding: 1rem 2rem;
+}
+
+.accordion-contents__content {
+	// transition: height 0.5s linear;
+
+	&:not(:last-of-type) {
+		margin-bottom: 1rem;
+	}
+
+	&:nth-child(1) {
+		color: variables.$darker-yellow;
+	}
+
+	&:nth-child(2) {
+		color: green;
+	}
+
+	&:nth-child(3) {
+		color: red;
+	}
+}
+
+.accordion-contents__content:not(:last-of-type) {
+	margin-bottom: 0.5rem;
+}
