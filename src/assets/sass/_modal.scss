@@ -81,7 +81,7 @@
 	}
 
 	&--draw {
-		color: #00427f;
+		color: variables.$medium-blue;
 		background-color: #54adff;
 	}
 
@@ -132,7 +132,7 @@
 	position: relative;
 	top: 0;
 	left: 0;
-	border: 2px solid #00427f;
+	border: 2px solid variables.$medium-blue;
 
 	> * {
 		height: 100%;

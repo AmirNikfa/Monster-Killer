@@ -17,7 +17,7 @@
 
 	time {
 		font-size: min(4vw, 1rem);
-		color: #003566;
+		color: variables.$dark-blue;
 	}
 }
 
@@ -30,14 +30,14 @@
 
 	&:hover,
 	&:active {
-		background-color: #0085ff;
+		background-color: variables.$light-blue;
 	}
 }
 
 .accordion-button--draw,
 .draw-item {
-	color: #00427f;
-	background-color: #54adff;
+	color: variables.$medium-blue;
+	background-color: variables.$lighter-blue;
 
 	.accordion-title {
 		color: inherit;
@@ -49,14 +49,14 @@
 
 	&:hover,
 	&:active {
-		background-color: #7de07d;
+		background-color: variables.$medium-green;
 	}
 }
 
 .accordion-button--win,
 .winner-item {
 	background-color: #cde7cd;
-	color: #009200;
+	color: variables.$dark-green;
 
 	.accordion-title {
 		color: inherit;
@@ -75,7 +75,7 @@
 .accordion-button--lose,
 .loser-item {
 	background-color: #e8acac;
-	color: #bc0000;
+	color: variables.$medium-red;
 
 	.accordion-title {
 		color: inherit;
@@ -83,11 +83,11 @@
 }
 
 .damage-done-item {
-	color: #009200 !important;
+	color: variables.$dark-green !important;
 }
 
 .damage-taken-item {
-	color: #bc0000 !important;
+	color: variables.$medium-red !important;
 }
 
 .accordion-title {
